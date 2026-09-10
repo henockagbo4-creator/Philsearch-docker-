@@ -1,0 +1,53 @@
+use_default_settings: true
+
+server:
+  secret_key: "philsearch-cle-secrete-a-changer-plus-tard"
+  limiter: false
+
+search:
+  formats:
+    - html
+    - json
+
+engines:
+  # Recherche générale
+  - name: bing
+    disabled: false
+  - name: duckduckgo
+    disabled: false
+  - name: qwant
+    disabled: false
+  - name: startpage
+    disabled: false
+
+  # Images
+  - name: google images
+    disabled: false
+  - name: qwant images
+    disabled: false
+
+  # Vidéos
+  - name: google videos
+    disabled: false
+  - name: bing videos
+    disabled: false
+  - name: qwant videos
+    disabled: false
+  - name: youtube
+    disabled: false
+
+  # Actualités
+  - name: google news
+    disabled: false
+  - name: bing news
+    disabled: false
+  - name: qwant news
+    disabled: false
+
+  # Moteurs qui ignorent la requête et renvoient du contenu générique — désactivés
+  - name: artic
+    disabled: true
+  - name: freevector
+    disabled: true
+  - name: bing images
+    disabled: true
